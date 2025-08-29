@@ -34,16 +34,5 @@ Docker 기반으로 Kafka, MySQL, Airflow를 실행하고, 로컬 PySpark를 활
 ---
 
 ## 📂 프로젝트 구조
-de-mini-etl/
-├── docker-compose.yml # Docker 환경 (Kafka, Zookeeper, MySQL, Airflow)
-├── dags/ # Airflow DAGs
-│ └── weather_etl.py
-├── spark/ # Spark 처리 코드
-│ └── spark_stream.py
-├── producer/ # Kafka Producer 코드
-│ └── producer.py
-└── README.md
 
-
-└── README.md
 
