@@ -46,3 +46,12 @@ de-mini-etl/
 └── README.md
 ```
 
+## 📊 데이터 파이프라인 아키텍처
+
+```mermaid
+flowchart LR
+    A[Kafka Producer] -->|데이터 발행| B[Kafka Topic]
+    B --> C[Spark Streaming]
+    C -->|전처리/집계| D[MySQL DB]
+    D --> E[Airflow DAG]
+    E -->|스케줄링/자동화| D ```
