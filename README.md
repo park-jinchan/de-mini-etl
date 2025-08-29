@@ -54,4 +54,4 @@ flowchart LR
     B --> C[Spark Streaming]
     C -->|전처리/집계| D[MySQL DB]
     D --> E[Airflow DAG]
-    E -->|스케줄링/자동화| D ```
+    E -->|스케줄링/자동화| D
